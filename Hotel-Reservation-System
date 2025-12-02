@@ -1,0 +1,145 @@
+Hotel Reservation System
+
+Team Pour ideots- IT 2110
+
+Bacay, Gian
+
+Delgado, James Carl R.
+
+Espino, Joshua
+
+Salazar, James Lander 
+
+📌 Project Overview
+
+The Hotel Reservation System is a console-based Java application designed to simulate an organized, efficient, and user-friendly hotel booking and management process. 
+It models real-world hotel operations and integrates software principles such as data accuracy, transparency, and user-centered interaction.
+
+The project is inspired by recent research on digital reservation technologies.
+Koh and Mohmad Hassim (2021) emphasize the importance of automated booking platforms, real-time room availability monitoring, and secure data handling in improving hotel operations, 
+while Williams and Micheal (2018) highlight structured system design and database-driven workflows to simplify reservation management. These studies guided the development of the system’s 
+simulated booking and room-tracking features.
+
+The application allows users to manage rooms, record guest information, create and update reservations, and view availability using object-oriented programming concepts.
+
+🧠 OOP Concepts Used
+
+Encapsulation
+
+Encapsulation is used to protect data within classes such as Room, Reservation, and Guest.
+
+Attributes (e.g., room number, guest name, reservation dates) are kept private, and accessed or modified only through public getter and setter methods.
+
+This ensures data safety and prevents unauthorized or accidental modification.
+
+Inheritance
+
+Inheritance allows the system to reuse shared behavior.
+
+Common attributes for different user types (e.g., Admin, Staff, Customer) or different room categories (e.g., StandardRoom, DeluxeRoom) can be placed in a base class.
+
+This reduces repetitive code and makes it easier to extend the system.
+
+Polymorphism
+
+Polymorphism is applied when different classes share the same method name but implement their behavior differently.
+
+the system may include methods like calculatePrice() that behave differently depending on room type or applied discounts.
+
+This allows flexible and dynamic processing of objects at runtime.
+
+Abstraction
+
+Abstraction is used by creating classes that represent real-world hotels
+
+such as rooms, guests, and reservations—without exposing unnecessary implementation details.
+
+Only essential behaviors and attributes are defined,
+
+simplifying interaction and improving readability.
+
+
+📁 Program Structure
+
+Main Classes
+
+Room (abstract)
+Base class containing attributes for room number, room type, price, and availability status.
+
+StandardRoom (subclass)
+Represents basic accommodation with standard pricing and amenities.
+
+DeluxeRoom (subclass)
+Offers enhanced comfort such as upgraded amenities or larger space.Implements higher pricing and refined room details.
+
+
+Guest
+Stores guest information including name, contact details, and ID reference.
+
+Reservation
+Links a guest with a specific room. Stores booking information and is added to the reservations list when a booking is made.
+
+HotelReservationSystem (main system class)
+Acts as the controller that manages rooms, reservations, and user input.
+Includes functions for viewing rooms, booking rooms, canceling reservations, and searching availability.
+
+📊 Text-Based Class Diagram
+
+                     +----------------------------+
+                     |        Room (abstract)     |
+                     +----------------------------+
+                     | - roomNumber               |
+                     | - booked                   |
+                     +----------------------------+
+                     | + getRoomNumber()          |
+                     | + isBooked()               |
+                     | + bookRoom()               |
+                     | + cancelBooking()          |
+                     | + getPrice() (abstract)    |
+                     +-----------+----------------+
+                                 |
+               -------------------------------------------
+               |                                         |
+     +-------------------------+             +-------------------------+
+     |      StandardRoom       |             |       DeluxeRoom        |
+     +-------------------------+             +-------------------------+
+     | price = 1500.00         |             | price = 3000.00         |
+     | overrides getPrice()    |             | overrides getPrice()    |
+     +-------------------------+             +-------------------------+
+
+                     +----------------------------+
+                     |           Guest            |
+                     +----------------------------+
+                     | - name                     |
+                     | - contact                  |
+                     +----------------------------+
+                     | + getName()                |
+                     | + getContact()             |
+                     +----------------------------+
+
+                     +----------------------------+
+                     |        Reservation         |
+                     +----------------------------+
+                     | - guest                    |
+                     | - room                     |
+                     +----------------------------+
+                     | + getGuest()               |
+                     | + getRoom()                |
+                     +----------------------------+
+
+                   +---------------------------------------+
+                   |       HotelReservationSystem          |
+                   +---------------------------------------+
+                   | - rooms (ArrayList<Room>)             |
+                   | - reservations (ArrayList<Reservation>)|
+                   | - sc (Scanner)                        |
+                   +---------------------------------------+
+                   | + loadRooms()                         |
+                   | + runMenu()                           |
+                   | + viewRooms()                         |
+                   | + bookRoom()                          |
+                   | + cancelReservation()                 |
+                   | + searchAvailableRooms()              |
+                   | + findRoom()                          |
+                   | + safeIntInput()                      |
+                   +---------------------------------------+
