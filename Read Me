@@ -127,4 +127,26 @@ Includes functions for viewing rooms, booking rooms, canceling reservations, and
                                +----------------------------+
                    +---------------------------------------+
 
+How to Run the Program
+
+1. Save the Java File
+Make sure the filename matches the public main class.
+
+2. Open Command Prompt / PowerShell
+Navigate to the folder containing your .java file:
+cd path\to\your\project
+
+3. Compile
+javac HotelReservationSystem.java
+
+4. Run
+java HotelReservationSystem
+
+5.Interact with the Menu
+The main menu will appear, allowing you to:
+
+View all rooms
+Book a room
+Cancel reservations
+Search available rooms
 
