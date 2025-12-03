@@ -10,7 +10,7 @@ Espino, Joshua Rei P.
 
 Salazar, James Lander A.
 
-📌 Project Overview
+  📌 Project Overview
 
 The Hotel Reservation System is a console-based Java application designed to simulate an organized, efficient, and user-friendly hotel booking and management process. 
 It models real-world hotel operations and integrates software principles such as data accuracy, transparency, and user-centered interaction.
@@ -22,7 +22,7 @@ simulated booking and room-tracking features.
 
 The application allows users to manage rooms, record guest information, create and update reservations, and view availability using object-oriented programming concepts.
 
-🧠 OOP Concepts Used
+  🧠 OOP Concepts Used
 
 Encapsulation
 
@@ -59,7 +59,7 @@ Only essential behaviors and attributes are defined,
 simplifying interaction and improving readability.
 
 
-📁 Program Structure
+  📁 Program Structure
 
 Main Classes
 
@@ -83,7 +83,7 @@ HotelReservationSystem (main system class)
 Acts as the controller that manages rooms, reservations, and user input.
 Includes functions for viewing rooms, booking rooms, canceling reservations, and searching availability.
 
-📊 Text-Based Class Diagram
+  📊 Text-Based Class Diagram
 
                +----------------------+
                      |     Room (abstract)  |
@@ -150,11 +150,11 @@ Book a room
 Cancel reservations
 Search available rooms
 
-🖥️ Sample Output
+  🖥️ Sample Output
 
 https://github.com/jmscrldelgado/Hotel-Reservation-System/blob/main/590179238_860335826477651_495100115201283920_n.png
 
-✍️ Authors & Acknowledgements
+  ✍️ Authors & Acknowledgements
 
 This project was created by Team Pour Ideots:
 
@@ -176,7 +176,7 @@ Families, loved ones, and friends — for their unwavering support.
 
 Each team member — for their dedication, effort, and collaboration that led to the project's success.
 
-🚀 Future Enhancements
+  🚀 Future Enhancements
 
 1. Add Room Pricing & Billing System
 Automatically compute total cost based on room rate and number of nights.
@@ -190,7 +190,7 @@ Replace in-memory storage with file handling or a database (e.g., MySQL) so data
 4. Customer Profile Management
 Store guest details such as name, contact number, and booking history.
 
-📚 References
+  📚 References
 
 https://www.emerald.com/insight/content/doi/10.1108/JHTT-06-2016-0039/full/html
 
