@@ -2,7 +2,7 @@ Hotel Reservation System
 
 Team Pour ideots- IT 2110
 
-Bacay, Gian
+Bacay, Gian B.
 
 Delgado, James Carl R.
 
@@ -16,8 +16,8 @@ The Hotel Reservation System is a console-based Java application designed to sim
 It models real-world hotel operations and integrates software principles such as data accuracy, transparency, and user-centered interaction.
 
 The project is inspired by recent research on digital reservation technologies.
-Koh and Mohmad Hassim (2021) emphasize the importance of automated booking platforms, real-time room availability monitoring, and secure data handling in improving hotel operations, 
-while Williams and Micheal (2018) highlight structured system design and database-driven workflows to simplify reservation management. These studies guided the development of the system’s 
+Al-Kasasbeh, M.; Kaur, M. (2017) emphasize the importance of automated booking platforms, real-time room availability monitoring, and secure data handling in improving hotel operations, 
+while Lee, S.-H.; Yoo, C. (2015) highlight structured system design and database-driven workflows to simplify reservation management. These studies guided the development of the system’s 
 simulated booking and room-tracking features.
 
 The application allows users to manage rooms, record guest information, create and update reservations, and view availability using object-oriented programming concepts.
@@ -154,3 +154,44 @@ Search available rooms
 
 https://github.com/jmscrldelgado/Hotel-Reservation-System/blob/main/590179238_860335826477651_495100115201283920_n.png
 
+✍️ Authors & Acknowledgements
+
+This project was created by Team Pour Ideots:
+
+James Carl R. Delgado – Leader, writer, researcher, documentation
+
+Gian B. Bacay – Writer, researcher, documentation
+
+Joshua Rei P. Espino – Writer, researcher, documentation
+
+James Lander A. Salazar– Console programming, system development
+
+The division of tasks allowed each member to contribute based on their strengths, ensuring efficient workflow and creativity in both writing and system implementation.
+
+Special thanks to:
+
+Ms. Christiana Grace Alib — for providing continuous guidance, feedback, and encouragement.
+
+Families, loved ones, and friends — for their unwavering support.
+
+Each team member — for their dedication, effort, and collaboration that led to the project's success.
+
+🚀 Future Enhancements
+
+1. Add Room Pricing & Billing System
+Automatically compute total cost based on room rate and number of nights.
+
+2. Add Check-in and Check-out Dates
+Allows users to book rooms for multiple days and prevent overlapping bookings.
+
+3 .Improve Data Persistence
+Replace in-memory storage with file handling or a database (e.g., MySQL) so data is saved permanently.
+
+4. Customer Profile Management
+Store guest details such as name, contact number, and booking history.
+
+📚 References
+
+https://www.emerald.com/insight/content/doi/10.1108/JHTT-06-2016-0039/full/html
+
+https://www.sciencedirect.com/science/article/pii/S0278431915000925
